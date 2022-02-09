@@ -85,11 +85,21 @@
 # Join reviews
 #     on reviewers.id = reviews.reviewer_id
 
-Select title as unreviewed_series
-FROM series
-LEFT JOIN reviews
-    ON series.id = reviews.series_id
-where rating is null;
+-- Challenge 4
+# Select title as unreviewed_series
+# FROM series
+# LEFT JOIN reviews
+#     ON series.id = reviews.series_id
+# where rating is null;
+
+-- Challenge 5
+# select genre, AVG(rating)
+# from series
+# JOIN reviews
+#     on series.id = reviews.series_id
+# Group by genre
+# order by genre;
+
 
 
 
